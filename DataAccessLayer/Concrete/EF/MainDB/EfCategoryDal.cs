@@ -16,7 +16,7 @@ namespace DataAccessLayer.Concrete.EF.MainDB
         {
             using (var context = new MainDBContext())
             {
-                return context.Categories.Include(x => x.MenuItems).ToList();
+                return context.Categories.ToList();
             }
         }
     }

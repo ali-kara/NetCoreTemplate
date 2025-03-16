@@ -12,7 +12,7 @@ namespace Business.DependencyResolvers.Autofac
     public class AutofacModule : Module
     {
         protected override void Load(ContainerBuilder builder)
-        {s
+        {
             builder.RegisterType<CategoryManager>().As<ICategoryService>().SingleInstance();
             builder.RegisterType<EfCategoryDal>().As<ICategoryDal>().SingleInstance();
 
